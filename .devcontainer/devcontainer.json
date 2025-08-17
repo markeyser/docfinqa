@@ -1,0 +1,10 @@
+{
+  "name": "docfinqa-dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "vscode",
+  "mounts": [ 
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ]
+}
